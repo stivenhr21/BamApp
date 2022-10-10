@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class co.com.accenture.bamapp.runners.iniciosesion.InicioSesionRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class co.com.accenture.bamapp.runners.iniciosesion.InicioSesionRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/co.com.accenture.bamapp.runners.iniciosesion.html">co.com.accenture.bamapp.runners.iniciosesion</a> &gt; InicioSesionRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+?[31mFailed scenarios:?[0m
+file:///C:/Proyectos/BamApp/BamApp/src/test/resources/features/iniciosesion/inicio_sesion.feature:17 # inicio de sesion exitoso
+
+1 Scenarios (?[31m1 failed?[0m)
+2 Steps (?[31m1 failed?[0m, ?[32m1 passed?[0m)
+1m4,431s
+
+
+net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for By.xpath: //*[@contentDescription='Shift'] to be present (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'C11-8HV691PM3FR', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1074)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1047)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:965)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1243)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$eD8gtd1G.performAs$accessor$RATsuOpj(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$eD8gtd1G.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at co.com.accenture.bamapp.interactions.Write.performAs(Write.java:34)
+	at co.com.accenture.bamapp.interactions.Write$ByteBuddy$YHDQHKE0.performAs$accessor$fKxyk91q(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.accenture.bamapp.interactions.Write$ByteBuddy$YHDQHKE0.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at co.com.accenture.bamapp.tasks.iniciosesion.InicioSesion.performAs(InicioSesion.java:29)
+	at co.com.accenture.bamapp.tasks.iniciosesion.InicioSesion$ByteBuddy$f1n5GDer.performAs$accessor$mz0ba8CZ(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.accenture.bamapp.tasks.iniciosesion.InicioSesion$ByteBuddy$f1n5GDer.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at co.com.accenture.bamapp.stepdefinitions.iniciosesion.InicioSesionStepDefinitions.elUsuarioIniciaSesionConSusDatos(InicioSesionStepDefinitions.java:33)
+	at ?.el usuario inicia sesion con sus datos(file:///C:/Proyectos/BamApp/BamApp/src/test/resources/features/iniciosesion/inicio_sesion.feature:12)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for By.xpath: //*[@contentDescription='Shift'] to be present (tried for 5 second(s) with 100 milliseconds interval)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'C11-8HV691PM3FR', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1044)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilElementPresent(WebElementFacadeImpl.java:965)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.click(WebElementFacadeImpl.java:1243)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget.performAs(ClickOnTarget.java:13)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$eD8gtd1G.performAs$accessor$RATsuOpj(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.ClickOnTarget$ByteBuddy$eD8gtd1G.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at co.com.accenture.bamapp.interactions.Write.performAs(Write.java:34)
+	at co.com.accenture.bamapp.interactions.Write$ByteBuddy$YHDQHKE0.performAs$accessor$fKxyk91q(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.accenture.bamapp.interactions.Write$ByteBuddy$YHDQHKE0.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at co.com.accenture.bamapp.tasks.iniciosesion.InicioSesion.performAs(InicioSesion.java:29)
+	at co.com.accenture.bamapp.tasks.iniciosesion.InicioSesion$ByteBuddy$f1n5GDer.performAs$accessor$mz0ba8CZ(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at co.com.accenture.bamapp.tasks.iniciosesion.InicioSesion$ByteBuddy$f1n5GDer.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
+	at co.com.accenture.bamapp.stepdefinitions.iniciosesion.InicioSesionStepDefinitions.elUsuarioIniciaSesionConSusDatos(InicioSesionStepDefinitions.java:33)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)
+	at io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.CucumberSerenityRunner$RunCucumber.evaluate(CucumberSerenityRunner.java:287)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO  - ?[96m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+-------------------------------------------------------------------------------------
+?[0m
+[Test worker] INFO  - Test Suite Started: sucursal virtual personas App
+[pool-3-thread-1] INFO serenity.reporting - 
+---------------------------------------
+| TEST NAME:   ?[1minicio de sesion exitoso?[0m
+| RESULT:      ?[91mFailing?[0m
+| REQUIREMENT: sucursal virtual personas App
+| REPORT:      ?[96mfile:///C:/Proyectos/BamApp/BamApp/target/site/serenity/516a34c71bfe38615d796624b1cc10f05cfaca08d1344cf6373bd33260a9d181.html?[0m
+---------------------------------------
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 15 sept. 2022 16:16:12</p>
+</div>
+</div>
+</body>
+</html>
